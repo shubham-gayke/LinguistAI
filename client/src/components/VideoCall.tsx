@@ -77,7 +77,7 @@ export const VideoCall: React.FC<VideoCallProps> = ({ socket, user, friend, onEn
             });
 
             socket.on('end_call', () => {
-                setCallEnded(true);
+
                 onEndCall();
             });
 
@@ -133,7 +133,7 @@ export const VideoCall: React.FC<VideoCallProps> = ({ socket, user, friend, onEn
             });
 
             socket.on('end_call', () => {
-                setCallEnded(true);
+
                 onEndCall();
             });
 
