@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, UserPlus, Users, Bell, Check, X, MessageCircle } from 'lucide-react';
+import { Search, UserPlus, Users, Bell, Check, X } from 'lucide-react';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 

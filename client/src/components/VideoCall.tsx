@@ -19,9 +19,9 @@ const ICE_SERVERS = {
     ]
 };
 
-export const VideoCall: React.FC<VideoCallProps> = ({ socket, room, user, friend, onEndCall, isIncoming, incomingSignal }) => {
+export const VideoCall: React.FC<VideoCallProps> = ({ socket, user, friend, onEndCall, isIncoming, incomingSignal }) => {
     const [callAccepted, setCallAccepted] = useState(false);
-    const [callEnded, setCallEnded] = useState(false);
+
     const [stream, setStream] = useState<MediaStream | null>(null);
     const [remoteStream, setRemoteStream] = useState<MediaStream | null>(null);
     const [isMicOn, setIsMicOn] = useState(true);

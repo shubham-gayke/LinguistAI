@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io, Socket } from 'socket.io-client';
 import { motion } from 'framer-motion';
-import { Send, Globe, Mic, MicOff, Phone, Video, MessageSquare, Paperclip, FileText, Music, Image as ImageIcon, X } from 'lucide-react';
+import { Send, Globe, Mic, MicOff, Phone, Video, MessageSquare, Paperclip, FileText, Music } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { ChatSidebar } from '../components/ChatSidebar';
 import { VideoCall } from '../components/VideoCall';

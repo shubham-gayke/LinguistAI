@@ -12,7 +12,7 @@ import { AdminDashboard } from './pages/AdminDashboard';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
-const ProtectedChatRoute = ({ children }: { children: JSX.Element }) => {
+const ProtectedChatRoute = ({ children }: { children: React.ReactNode }) => {
   const { user, isAuthenticated } = useAuth();
 
   if (!isAuthenticated) return <Navigate to="/login" />;
